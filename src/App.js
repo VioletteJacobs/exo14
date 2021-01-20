@@ -22,13 +22,15 @@
 
 import "./App.css";
 import React, { useState } from 'react'
-
+import Article from "./components/Article"
 
 function App() {
     const [variable, setVariable] = useState("Coucou")
+    const [ouf, setOuf] = useState("nouvelle variable")
     return (
         <div>
             <h1>{variable}</h1>
+            <Article autre={ouf}/>
         </div>
     )
 }
